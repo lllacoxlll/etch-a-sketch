@@ -7,8 +7,9 @@ function createGrid (num) {
         for (let j=0;j<num;++j) {
             let row = document.createElement('div');
             row.classList.add('row');
-            //row.textContent = '';
             
+            customHover(row);
+
             column.appendChild(row);
         }
         container.appendChild(column);
@@ -16,3 +17,9 @@ function createGrid (num) {
 };
 
 createGrid(16);
+
+function customHover (row) {
+    row.addEventListener('mouseover', () => {
+        row.style.backgroundColor = 'black';
+    });
+};

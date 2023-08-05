@@ -5,14 +5,11 @@
 .column {
     flex: 1;
     margin: 0;
-    /* width: 60px;
-    height: 60px; */
 }
 
 .row {
     margin: 0;
     padding: 25px;
-    /* box-sizing: border-box; */
     border: 1px solid black;
     width: 60px;
     height: 60px;
